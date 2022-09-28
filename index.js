@@ -25,9 +25,6 @@ const PULLS_ENDPOINT = `${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/pulls`;
 function getPullRequests() {
   return axios({
     method: "GET",
-    url: PULLS_ENDPOINT,
-    headers: AUTH_HEADER,
-  });
 }
 
 /**
